@@ -1,0 +1,8 @@
+<a href="{% url  'create' %}"> create new city</a>
+<br>
+{% for city in cities %}
+    <a href="{% url 'record' city.id %}">{{city.name}}</a>  
+    <a href="{% url 'delete' city.id %}">   delete</a>  
+    
+    <br>
+{% endfor %}

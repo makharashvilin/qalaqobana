@@ -1,0 +1,10 @@
+name: {{ city.name }}
+<br>
+country: {{ city.country }}
+<br>
+population: {{ city.population }}
+<br>
+<a href="{% url 'update' city.id %}"> update</a>
+<br>
+
+<a href="{% url 'home' %}"> go back</a>
